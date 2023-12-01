@@ -11,7 +11,7 @@ public class ClickDistance : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
-            if(Vector3.Distance(hands.position, transform.position) < 2)
+            if(Vector3.Distance(hands.position, transform.position) < 0.25)
             {
                 Debug.Log("target found");
             }
