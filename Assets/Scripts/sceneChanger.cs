@@ -9,10 +9,11 @@ public class sceneChanger : MonoBehaviour
     [SerializeField] private int sceneNumber;
 
     // Update is called once per frame
-    void Update()
-    {
-        void OnMouseDown(){
-            SceneManager.LoadScene (sceneBuildIndex: sceneNumber);
-        }
+    public void ChangeScene(int sceneID){
+
+        SceneManager.LoadScene (sceneBuildIndex: sceneID);
+    }
+    public void QuitGame(){
+        Application.Quit();
     }
 }

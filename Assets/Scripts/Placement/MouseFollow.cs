@@ -12,5 +12,6 @@ public class MouseFollow : MonoBehaviour
     {
          mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         transform.position = mousePosition;
+
     }
 }
